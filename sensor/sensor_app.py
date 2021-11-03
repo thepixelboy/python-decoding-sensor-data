@@ -65,4 +65,13 @@ print(
 )
 print("\tAverage: {} humidity".format(mean(recs)))
 
+recs = humidity_data.get_data_by_date(rec_date=test_date)
+
+print(
+    "House Humidity sensor records for date: {} = {}".format(
+        test_date.strftime("%m/%d/%y"), len(recs)
+    )
+)
+print("\tAverrage: {} humidity".format(mean(recs)))
+
 # Module 5 code here:
